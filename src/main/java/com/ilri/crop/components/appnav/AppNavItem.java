@@ -1,4 +1,4 @@
-package com.example.application.components.appnav;
+package com.ilri.crop.components.appnav;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Tag;

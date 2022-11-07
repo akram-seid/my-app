@@ -1,10 +1,8 @@
-package com.example.application.views;
+package com.ilri.crop.views;
 
 
-import com.example.application.components.appnav.AppNav;
-import com.example.application.components.appnav.AppNavItem;
-import com.example.application.views.about.AboutView;
-import com.example.application.views.helloworld.HelloWorldView;
+import com.ilri.crop.components.appnav.AppNav;
+import com.ilri.crop.components.appnav.AppNavItem;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.html.Footer;
@@ -53,8 +51,8 @@ public class MainLayout extends AppLayout {
         // For documentation, visit https://github.com/vaadin/vcf-nav#readme
         AppNav nav = new AppNav();
 
-        nav.addItem(new AppNavItem("Hello World", HelloWorldView.class, "la la-globe"));
-        nav.addItem(new AppNavItem("About", AboutView.class, "la la-file"));
+        nav.addItem(new AppNavItem("Add Variety", AddVarietyView.class, "la la-globe"));
+        nav.addItem(new AppNavItem("View", ViewVarietyView.class, "la la-file"));
 
         return nav;
     }
